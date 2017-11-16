@@ -69,7 +69,7 @@ int TCPSocket::Bind(const SOCKADDR_IN* inBindAddress)
 	if (error != 0)
 	{
 		CCmdStart::CmdDebugText(L"TCPSocket::Bind", false);
-		return GetLastError();
+		return -1;
 	}
 	CCmdStart::CmdDebugText(L"TCPSocket::Bind", true);
 
