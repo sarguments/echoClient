@@ -18,5 +18,4 @@ public:
 	static TCPSocket*	CreateTCPSocket(SocketAddressFamily inFamily);
 
 private:
-
 };
