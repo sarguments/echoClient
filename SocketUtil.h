@@ -9,13 +9,12 @@ enum SocketAddressFamily
 class SocketUtil
 {
 public:
-
 	static BOOL DomainToIP(WCHAR* szDomain, IN_ADDR* pAddr);
 
-	static bool			WSAStart();
-	static void			CleanUp();
+	static bool	WSAStart();
+	static void	CleanUp();
 
-	static TCPSocket*	CreateTCPSocket(SocketAddressFamily inFamily);
+	static TCPSocket* CreateTCPSocket(SocketAddressFamily inFamily);
 
 private:
 };
